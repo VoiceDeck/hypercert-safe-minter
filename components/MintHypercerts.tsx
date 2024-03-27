@@ -26,7 +26,7 @@ export function MintHypercerts({ data }: MintHypercertProps) {
     return encodeFunctionData({
       abi: HypercertMinterAbi,
       functionName: "mintClaim",
-      args: [address, parseEther("1"), metadata, 0],
+      args: [address, 10000, metadata, 0],
     });
   };
 
